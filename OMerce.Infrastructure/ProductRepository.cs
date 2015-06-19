@@ -24,6 +24,7 @@ namespace OMerce.Infrastructure
         public void Save(Product product)
         {
             db.Products.Add(product);
+            db.SaveChanges();
         }
     }
 }

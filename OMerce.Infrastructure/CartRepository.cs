@@ -1,4 +1,5 @@
-﻿using OMerce.Core.RepositoryInterfaces;
+﻿using OMerce.Core;
+using OMerce.Core.RepositoryInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,19 +10,21 @@ namespace OMerce.Infrastructure
 {
     public class CartRepository:ICartRepository
     {
+        private OMerceDbContext db;
         public Core.ShoppingCart GetById(int id)
         {
-            throw new NotImplementedException();
+            return db.Carts.Find(id);
         }
 
         public IEnumerable<Core.ShoppingCart> GetAll()
         {
-            throw new NotImplementedException();
+            return db.Carts as IEnumerable<ShoppingCart>;
         }
 
         public void Save(Core.ShoppingCart cart)
         {
-            throw new NotImplementedException();
+            db.Carts.Add(cart);
+            db.SaveChanges();
         }
     }
 }
