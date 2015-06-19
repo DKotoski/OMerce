@@ -1,4 +1,5 @@
-﻿using OMerce.Core.RepositoryInterfaces;
+﻿using OMerce.Core;
+using OMerce.Core.RepositoryInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,11 @@ namespace OMerce.AppServices
     public class CartService
     {
 
-        private IProductRepository productRepo;
-        private ICartRepository cartRepo;
+        private IBaseRepository<Product> productRepo;
+        private IBaseRepository<ShoppingCart> cartRepo;
 
 
-        public CartService(IProductRepository productRepo, ICartRepository cartRepo)
+        public CartService(IBaseRepository<Product> productRepo, IBaseRepository<ShoppingCart> cartRepo)
         {
             this.productRepo = productRepo;
             this.cartRepo = cartRepo;

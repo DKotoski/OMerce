@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OMerce.Infrastructure
 {
-    public class ProductRepository:IProductRepository
+    public class ProductRepository:IBaseRepository<Product>
     {
         private OMerceDbContext db;
         public ProductRepository()

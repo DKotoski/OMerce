@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace OMerce.Core.RepositoryInterfaces
 {
-    public interface IProductRepository
+    public interface IBaseRepository<T>
     {
-        Product GetById(int id);
-        IEnumerable<Product> GetAll();
-        void Save(Product product);
+            T GetById(int id);
+            IEnumerable<T> GetAll();
+            void Save(T item);
     }
 }

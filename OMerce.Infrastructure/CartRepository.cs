@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OMerce.Infrastructure
 {
-    public class CartRepository:ICartRepository
+    public class CartRepository : IBaseRepository<ShoppingCart>
     {
         private OMerceDbContext db;
         public CartRepository()
