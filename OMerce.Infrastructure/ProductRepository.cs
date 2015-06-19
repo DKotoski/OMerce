@@ -8,9 +8,17 @@ using System.Threading.Tasks;
 
 namespace OMerce.Infrastructure
 {
-    class ProductRepository:IProductRepository
+    public class ProductRepository:IProductRepository
     {
         private OMerceDbContext db;
+        public ProductRepository()
+        {
+                
+        }
+        public ProductRepository(OMerceDbContext dbContext)
+        {
+            db = dbContext;
+        }
         public Product GetById(int id)
         {
             return db.Products.Find(id);

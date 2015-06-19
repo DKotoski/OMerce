@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OMerce.Infrastructure
 {
-    class OMerceDbContext:DbContext
+    public class OMerceDbContext:DbContext
     {
         public OMerceDbContext(string connectionString):base(connectionString)
         {

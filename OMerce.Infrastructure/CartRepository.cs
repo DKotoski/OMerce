@@ -11,6 +11,14 @@ namespace OMerce.Infrastructure
     public class CartRepository:ICartRepository
     {
         private OMerceDbContext db;
+        public CartRepository()
+        {
+                
+        }
+        public CartRepository(OMerceDbContext dbcontext)
+        {
+            db = dbcontext;
+        }
         public Core.ShoppingCart GetById(int id)
         {
             return db.Carts.Find(id);

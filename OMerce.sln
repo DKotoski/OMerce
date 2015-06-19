@@ -3,8 +3,50 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMerce.Core", "OMerce.Core\OMerce.Core.csproj", "{4FA59A71-4160-401F-8D07-ACC735AA4C43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMerce.Infrastructure", "OMerce.Infrastructure\OMerce.Infrastructure.csproj", "{A8E1D406-8E20-4EDF-85A8-7E976463F3B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMerce.AppServices", "OMerce.AppServices\OMerce.AppServices.csproj", "{111F4968-C8A1-4FB7-81FA-11F31493FC49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{52F279C8-810B-4C53-8831-21A255003CA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMerce.WebShop", "OMerce.WebShop\OMerce.WebShop.csproj", "{DF96ABBE-C8A9-4B9A-9034-45B687D78C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMerce.Admin", "OMerce.Admin\OMerce.Admin.csproj", "{004A3993-2213-4598-A12A-A1DE87A0A820}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FA59A71-4160-401F-8D07-ACC735AA4C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA59A71-4160-401F-8D07-ACC735AA4C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA59A71-4160-401F-8D07-ACC735AA4C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA59A71-4160-401F-8D07-ACC735AA4C43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E1D406-8E20-4EDF-85A8-7E976463F3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E1D406-8E20-4EDF-85A8-7E976463F3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E1D406-8E20-4EDF-85A8-7E976463F3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E1D406-8E20-4EDF-85A8-7E976463F3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{111F4968-C8A1-4FB7-81FA-11F31493FC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{111F4968-C8A1-4FB7-81FA-11F31493FC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{111F4968-C8A1-4FB7-81FA-11F31493FC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{111F4968-C8A1-4FB7-81FA-11F31493FC49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF96ABBE-C8A9-4B9A-9034-45B687D78C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF96ABBE-C8A9-4B9A-9034-45B687D78C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF96ABBE-C8A9-4B9A-9034-45B687D78C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF96ABBE-C8A9-4B9A-9034-45B687D78C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004A3993-2213-4598-A12A-A1DE87A0A820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004A3993-2213-4598-A12A-A1DE87A0A820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004A3993-2213-4598-A12A-A1DE87A0A820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004A3993-2213-4598-A12A-A1DE87A0A820}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF96ABBE-C8A9-4B9A-9034-45B687D78C38} = {52F279C8-810B-4C53-8831-21A255003CA5}
+		{004A3993-2213-4598-A12A-A1DE87A0A820} = {52F279C8-810B-4C53-8831-21A255003CA5}
 	EndGlobalSection
 EndGlobal
